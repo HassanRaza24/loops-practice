@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let obj = {
+        //     name: "Hassan Raza",
+        //     program: {
+        //         degree: "BSSE",
+        //         session: {
+        //             year: "2022-2026"
+        //         }
+        //     }
+        // }
+        //     for (let key in obj) {
+        //         let value = obj[key]
+        //         // console.log(value)
+        //         // console.log(typeof value)
+        //         if (typeof value === "object" && value !== null) {
+        //             for(key in value){
+        //                 console.log(key, value[key])
+        //             }
+        //         } else {
+        //             console.log(key, value); // Simple value print
+        //         }
+        //     }
+        let obj = {
+            name: "Hassan",
+            program: {
+                degree: "BSSE"
+            }
+        }
+
+        for (let key in obj) {
+            let value = obj[key];
+
+            if (typeof value === "object" && value !== null) {
+                for (let innerKey in value) {
+                    console.log(innerKey, value[innerKey]);
+                }
+            } else {
+                console.log(key, value);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
